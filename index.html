@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+        :root {
+            --bg: #f9fafb;
+            --text: #1f2937;
+            --accent: #6366f1;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--text);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .info-grid,
+        .skills-grid,
+        .project-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .info-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .skills-grid {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            text-align: center;
+        }
+
+        .skill {
+            background-color: var(--card-bg);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .project {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f3f4f6;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portfolio</h1>
+        <p>Web Developer | Problem Solver | Tech Enthusiast </p>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            Hello! I'm a computer science engineer specialization in AIML and web developer with a strong foundation in
+            programming and technologies. Whether it's frontend development, problem-solving on LeetCode, or
+            collaborating on GitHub,
+            I'm always up for a challenge.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="info-grid">
+            <div>
+                <p><strong>College:</strong> G.L BAJAJ INSTITUTE OF TECHNOLOGY AND MANGEMENT</p>
+                <p><strong>CGPA:</strong> 8.00</p>
+            </div>
+            <div>
+                <p><strong>Email:</strong> kunal39190@gmail.com</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/kunal7300"
+                        target="_blank">https://github.com/kunal7300</a></p>
+                <p><strong>LeetCode:</strong> <a href="https://leetcode.com/u/renin_2205/"
+                        target="_blank">https://leetcode.com/u/renin_2205/</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">java</div>
+            <div class="skill">Python</div>
+            <div class="skill">C++</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Tailwind CSS</div>
+            <div class="skill">DSA</div>
+            <div class="skill">OOPS</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A fully responsive personal website built using HTML, CSS, and JavaScript to showcase my resume,
+                    projects, and skills.</p>
+            </div>
+            <div class="project">
+                <h3>Task Manager App(CLONE)</h3>
+                <p>A web app to create, update, and delete daily tasks. Built using React and Firebase for real-time
+                    syncing.
+                    THIS IS FOR PRACTICE</p>
+            </div>
+            <div class="project">
+                <h3>Weather Forecast App(CLONE)</h3>
+                <p>Uses OpenWeather API to show weather by city name. Built with vanilla JavaScript and styled using
+                    Tailwind CSS.
+                    THIS IS FOR PRACTICE</p>
+            </div>
+            <div class="project">
+                <h3>CHAT BOT- DSA </h3>
+                <p>USING GEMINI API TO BUILT , java script is usned for this project. This is a simple chat bot
+                    which can answer your question related to DSA.
+                    THIS IS FOR PRACTICE</p>
+
+            </div>
+    </section>
+
+    <footer>
+        &copy; 2025 KUNAL SHARMA. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
